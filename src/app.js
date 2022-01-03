@@ -14,14 +14,6 @@ import 'react-dates/initialize';
 const store = configureStore();
 
 
-store.dispatch(addExpense({ description: 'Queinceniara', amount: 100000 }));
-store.dispatch(addExpense({ description: 'vacation', amount: 400 }));
-store.dispatch(addExpense({ description: 'Internet', amount: 300 }));
-
-
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
 
 
 const jsx = (
